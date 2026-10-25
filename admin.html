@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Panel - HP Bank</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="overlay" id="overlay"></div>
+<div class="app">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="logo">HP <span>Bank</span> <small style="font-size:.7rem;opacity:.7">ADMIN</small></div>
+    <a data-page="overview" class="active">📊 Overview</a>
+    <a data-page="customers">👥 Customers</a>
+    <a data-page="txns">📜 All Transactions</a>
+    <a data-page="loans">🏦 Loan Requests</a>
+    <a id="logoutLink">🚪 Logout</a>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:10px">
+        <button class="burger" id="burger" aria-label="Menu">☰</button>
+        <div class="tb-brand"><div class="tb-bank">🏦 HP Bank · Admin</div><h2 id="pageTitle">Overview</h2></div>
+      </div>
+      <div class="top-right">
+        <button class="icon-btn" id="themeBtn" title="Dark mode">🌙</button>
+        <div class="avatar">A</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page active" id="p-overview"></div>
+      <div class="page" id="p-customers"></div>
+      <div class="page" id="p-txns"></div>
+      <div class="page" id="p-loans"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

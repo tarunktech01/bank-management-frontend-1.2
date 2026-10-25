@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HP Bank - Secure Banking, Anytime</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- JOKE SCHEME BANNER: delete this whole block (and the promoClose line in the script) to remove it -->
+<div class="promo" id="promo">
+  <span>🎉 <b>HP Double Dhamaka Yojana:</b> 21 din me paisa double!</span>
+  <a href="login.html" class="promo-btn">Join now →</a>
+  <small></small>
+  <button id="promoClose" aria-label="Close">✕</button>
+</div>
+
+<nav class="nav">
+  <a href="index.html" class="logo">HP <span>Bank</span></a>
+  <button class="menu-toggle" id="menuBtn" aria-label="Menu">☰</button>
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="login.html">Login</a>
+    <a href="login.html?tab=register" class="btn btn-gold btn-sm">Open Account</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div>
+    <div class="tagline">Hamara Paisa, Hamara Bharosa</div>
+    <h1>Secure Banking,<br><span>Anytime, Anywhere.</span></h1>
+    <p>Check balance, send money, apply for loans and track every rupee. All from your phone, tablet or laptop.</p>
+    <div class="hero-btns">
+      <a href="login.html?tab=register" class="btn btn-gold">Open Account</a>
+      <a href="login.html" class="btn btn-outline">Login</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="bank-name">🏦 HP Bank</div>
+    <div class="chip"></div>
+    <div class="num">1000 000001</div>
+    <div class="row"><span>RAHUL SHARMA</span><span>SAVINGS</span></div>
+    <div class="row" style="margin-top:8px"><span>IFSC: HPBK0001001</span><span>DEMO CARD</span></div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><h3>50K+</h3><p>Happy Customers</p></div>
+  <div><h3>₹100Cr+</h3><p>Money Transferred</p></div>
+  <div><h3>24x7</h3><p>Online Banking</p></div>
+  <div><h3>100%</h3><p>Secure</p></div>
+</section>
+
+<section class="section" id="features">
+  <h2>Our Features</h2>
+  <p class="sub">Everything you need from a bank, in one place</p>
+  <div class="grid">
+    <div class="feature"><div class="ico">💸</div><h3>Fund Transfer</h3><p>Send money to any account in seconds.</p></div>
+    <div class="feature"><div class="ico">🏧</div><h3>Deposit &amp; Withdraw</h3><p>Add or take out money easily.</p></div>
+    <div class="feature"><div class="ico">📜</div><h3>Transaction History</h3><p>Search, filter and download statements.</p></div>
+    <div class="feature"><div class="ico">🏦</div><h3>Easy Loans</h3><p>Home, car, personal and education loans with EMI calculator.</p></div>
+    <div class="feature"><div class="ico">🔔</div><h3>Instant Alerts</h3><p>Get notified when money comes or goes.</p></div>
+    <div class="feature"><div class="ico">🌙</div><h3>Dark Mode</h3><p>Comfortable banking day and night.</p></div>
+  </div>
+</section>
+
+<section class="section" id="how" style="background:var(--sky)">
+  <h2>How it works</h2>
+  <p class="sub">Start in 3 simple steps</p>
+  <div class="grid">
+    <div class="feature"><div class="ico">1️⃣</div><h3>Register</h3><p>Fill a short form and open your account.</p></div>
+    <div class="feature"><div class="ico">2️⃣</div><h3>Login</h3><p>Use your email and password to enter your dashboard.</p></div>
+    <div class="feature"><div class="ico">3️⃣</div><h3>Start Banking</h3><p>Send money, apply for loans and track spending.</p></div>
+  </div>
+</section>
+
+<footer>
+  © 2026 HP Bank (Hamara Paisa Bank). College project, demo only. Not a real bank.
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  document.getElementById('promoClose').onclick = () => document.getElementById('promo').style.display = 'none';
+  document.getElementById('menuBtn').onclick = () => document.getElementById('navLinks').classList.toggle('open');
+  document.querySelectorAll('#navLinks a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+</script>
+</body>
+</html>
